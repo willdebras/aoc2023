@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "mNvyzJdePsDaIVkxlbRYShDdFxLvtawp7SDkXjbwDz9GIZwb54dxwYyJXpTccnRT0zh6j0Idufy+f1NvzqjpsA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Will Bonnell\\Documents\\adventofcode2023\\aoc2023\\aoc2023.fsproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Will Bonnell\\.nuget\\packages\\fsharp.core\\7.0.300\\fsharp.core.7.0.300.nupkg.sha512"
+  ],
+  "logs": []
+}
