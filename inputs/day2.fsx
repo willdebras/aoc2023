@@ -52,9 +52,5 @@ let powerCubes ( game: int list list) =
     let maxblue = game |> List.map (List.item 2) |> List.max
     maxred * maxgreen * maxblue
 
-let onegame = getGames lines[10]
-
-powerCubes onegame
-
 let allcubes = mappedlines |> Seq.map(fun(game: Round) -> game.games |> powerCubes) |> Seq.sum
 //77607
