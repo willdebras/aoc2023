@@ -43,3 +43,18 @@ let gameImpossible (game: int list list) =
 let validgames = mappedlines |> Seq.filter ( _.games >> gameImpossible >> not)
 
 validgames |> Seq.map _.gameNumber |> Seq.sum
+
+// part 2
+
+let powerCubes ( game: int list list) =
+    let maxred = game |> List.map (List.item 0) |> List.max
+    let maxgreen = game |> List.map (List.item 1) |> List.max
+    let maxblue = game |> List.map (List.item 2) |> List.max
+    maxred * maxgreen * maxblue
+
+let onegame = getGames lines[10]
+
+powerCubes onegame
+
+let allcubes = mappedlines |> Seq.map(fun(game: Round) -> game.games |> powerCubes) |> Seq.sum
+//77607
